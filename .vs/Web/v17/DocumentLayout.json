@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Sena\\source\\repos\\Web\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A275338F-305A-4DE9-A1E3-530EA3D40946}|Business\\Business.csproj|c:\\users\\sena\\source\\repos\\web\\business\\implementations\\basemodelbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A275338F-305A-4DE9-A1E3-530EA3D40946}|Business\\Business.csproj|solutionrelative:business\\implementations\\basemodelbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C512EAE-8E58-47AC-8966-C7162353384B}|Data\\Data.csproj|c:\\users\\sena\\source\\repos\\web\\data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0C512EAE-8E58-47AC-8966-C7162353384B}|Data\\Data.csproj|solutionrelative:data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A275338F-305A-4DE9-A1E3-530EA3D40946}|Business\\Business.csproj|c:\\users\\sena\\source\\repos\\web\\business\\implementations\\abasemodelbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A275338F-305A-4DE9-A1E3-530EA3D40946}|Business\\Business.csproj|solutionrelative:business\\implementations\\abasemodelbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -91,16 +99,8 @@
       "RelativeMoniker": "D:0:0:{9A5C3E91-3BDE-47FA-8F52-3F29F5A545B6}|Entity\\Entity.csproj|solutionrelative:entity\\models\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C512EAE-8E58-47AC-8966-C7162353384B}|Data\\Data.csproj|c:\\users\\sena\\source\\repos\\web\\data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{0C512EAE-8E58-47AC-8966-C7162353384B}|Data\\Data.csproj|solutionrelative:data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A275338F-305A-4DE9-A1E3-530EA3D40946}|Business\\Business.csproj|c:\\users\\sena\\source\\repos\\web\\business\\business.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{A275338F-305A-4DE9-A1E3-530EA3D40946}|Business\\Business.csproj|solutionrelative:business\\business.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16D6CA27-CA3D-45BC-B54E-4E3082DB0754}|Utilities\\Utilities.csproj|c:\\users\\sena\\source\\repos\\web\\utilities\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16D6CA27-CA3D-45BC-B54E-4E3082DB0754}|Utilities\\Utilities.csproj|solutionrelative:utilities\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -115,6 +115,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BaseModelBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Business\\Implementations\\BaseModelBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Implementations\\BaseModelBusiness.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Business\\Implementations\\BaseModelBusiness.cs",
+              "RelativeToolTip": "Business\\Implementations\\BaseModelBusiness.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAA7wDkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T16:56:10.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ABaseModelBusiness.cs",
               "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Business\\Implementations\\ABaseModelBusiness.cs",
               "RelativeDocumentMoniker": "Business\\Implementations\\ABaseModelBusiness.cs",
@@ -127,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "IBaseModelBusiness.cs",
               "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Business\\Interfaces\\IBaseModelBusiness.cs",
               "RelativeDocumentMoniker": "Business\\Interfaces\\IBaseModelBusiness.cs",
@@ -135,12 +152,11 @@
               "RelativeToolTip": "Business\\Interfaces\\IBaseModelBusiness.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T16:40:01.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T16:40:01.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Contexts\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Entity\\Contexts\\ApplicationDbContext.cs",
@@ -148,12 +164,11 @@
               "RelativeToolTip": "Entity\\Contexts\\ApplicationDbContext.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwBsAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T15:32:08.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T15:32:08.112Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "BaseModelData.cs",
               "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Data\\Implementations\\BaseModelData.cs",
               "RelativeDocumentMoniker": "Data\\Implementations\\BaseModelData.cs",
@@ -161,12 +176,11 @@
               "RelativeToolTip": "Data\\Implementations\\BaseModelData.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAAABAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T15:24:42.869Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T15:24:42.869Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ABaseModelData.cs",
               "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Data\\Implementations\\ABaseModelData.cs",
               "RelativeDocumentMoniker": "Data\\Implementations\\ABaseModelData.cs",
@@ -174,12 +188,11 @@
               "RelativeToolTip": "Data\\Implementations\\ABaseModelData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T15:24:18.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T15:24:18.819Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "GenericModel.cs",
               "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\GenericModel.cs",
               "RelativeDocumentMoniker": "Entity\\Models\\GenericModel.cs",
@@ -187,221 +200,12 @@
               "RelativeToolTip": "Entity\\Models\\GenericModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T12:47:59.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T12:47:59.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GamePlayer.cs",
-              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\GamePlayer.cs",
-              "RelativeDocumentMoniker": "Entity\\Models\\GamePlayer.cs",
-              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\GamePlayer.cs",
-              "RelativeToolTip": "Entity\\Models\\GamePlayer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T14:25:05.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GenericDto.cs",
-              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\GenericDto.cs",
-              "RelativeDocumentMoniker": "Entity\\Dtos\\GenericDto.cs",
-              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\GenericDto.cs",
-              "RelativeToolTip": "Entity\\Dtos\\GenericDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T12:58:54.901Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Entity",
-              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Entity.csproj",
-              "RelativeDocumentMoniker": "Entity\\Entity.csproj",
-              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Entity.csproj",
-              "RelativeToolTip": "Entity\\Entity.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-01T15:31:02.827Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DataInitial.cs",
-              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Contexts\\DataInitial.cs",
-              "RelativeDocumentMoniker": "Entity\\Contexts\\DataInitial.cs",
-              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Contexts\\DataInitial.cs",
-              "RelativeToolTip": "Entity\\Contexts\\DataInitial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T15:46:20.193Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IBaseModelData.cs",
-              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Data\\Interfaces\\IBaseModelData.cs",
-              "RelativeDocumentMoniker": "Data\\Interfaces\\IBaseModelData.cs",
-              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Data\\Interfaces\\IBaseModelData.cs",
-              "RelativeToolTip": "Data\\Interfaces\\IBaseModelData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T15:18:16.192Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BaseModel.cs",
-              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\BaseModel.cs",
-              "RelativeDocumentMoniker": "Entity\\Models\\BaseModel.cs",
-              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\BaseModel.cs",
-              "RelativeToolTip": "Entity\\Models\\BaseModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T12:47:52.961Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Card.cs",
-              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\Card.cs",
-              "RelativeDocumentMoniker": "Entity\\Models\\Card.cs",
-              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\Card.cs",
-              "RelativeToolTip": "Entity\\Models\\Card.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T14:38:58.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "GamePlayerDto.cs",
-              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\GamePlayerDto.cs",
-              "RelativeDocumentMoniker": "Entity\\Dtos\\GamePlayerDto.cs",
-              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\GamePlayerDto.cs",
-              "RelativeToolTip": "Entity\\Dtos\\GamePlayerDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T15:13:35.964Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "RoomDto.cs",
-              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\RoomDto.cs",
-              "RelativeDocumentMoniker": "Entity\\Dtos\\RoomDto.cs",
-              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\RoomDto.cs",
-              "RelativeToolTip": "Entity\\Dtos\\RoomDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T15:12:56.797Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "PlayerDto.cs",
-              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\PlayerDto.cs",
-              "RelativeDocumentMoniker": "Entity\\Dtos\\PlayerDto.cs",
-              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\PlayerDto.cs",
-              "RelativeToolTip": "Entity\\Dtos\\PlayerDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T15:10:07.114Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DeckDto.cs",
-              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\DeckDto.cs",
-              "RelativeDocumentMoniker": "Entity\\Dtos\\DeckDto.cs",
-              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\DeckDto.cs",
-              "RelativeToolTip": "Entity\\Dtos\\DeckDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T15:05:02.702Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CardDto.cs",
-              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\CardDto.cs",
-              "RelativeDocumentMoniker": "Entity\\Dtos\\CardDto.cs",
-              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\CardDto.cs",
-              "RelativeToolTip": "Entity\\Dtos\\CardDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T15:03:53.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Room.cs",
-              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\Room.cs",
-              "RelativeDocumentMoniker": "Entity\\Models\\Room.cs",
-              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\Room.cs",
-              "RelativeToolTip": "Entity\\Models\\Room.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T14:27:15.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "BaseDto.cs",
-              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\BaseDto.cs",
-              "RelativeDocumentMoniker": "Entity\\Dtos\\BaseDto.cs",
-              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\BaseDto.cs",
-              "RelativeToolTip": "Entity\\Dtos\\BaseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T12:58:49.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Deck.cs",
-              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\Deck.cs",
-              "RelativeDocumentMoniker": "Entity\\Models\\Deck.cs",
-              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\Deck.cs",
-              "RelativeToolTip": "Entity\\Models\\Deck.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T14:28:39.735Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\Player.cs",
-              "RelativeDocumentMoniker": "Entity\\Models\\Player.cs",
-              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\Player.cs",
-              "RelativeToolTip": "Entity\\Models\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T12:55:29.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Data",
+              "DocumentIndex": 1,
+              "Title": "Data.csproj",
               "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Data\\Data.csproj",
               "RelativeDocumentMoniker": "Data\\Data.csproj",
               "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Data\\Data.csproj",
@@ -412,38 +216,212 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GamePlayer.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\GamePlayer.cs",
+              "RelativeDocumentMoniker": "Entity\\Models\\GamePlayer.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\GamePlayer.cs",
+              "RelativeToolTip": "Entity\\Models\\GamePlayer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T14:25:05.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GenericDto.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\GenericDto.cs",
+              "RelativeDocumentMoniker": "Entity\\Dtos\\GenericDto.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\GenericDto.cs",
+              "RelativeToolTip": "Entity\\Dtos\\GenericDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T12:58:54.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Entity.csproj",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Entity.csproj",
+              "RelativeDocumentMoniker": "Entity\\Entity.csproj",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Entity.csproj",
+              "RelativeToolTip": "Entity\\Entity.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-01T15:31:02.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DataInitial.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Contexts\\DataInitial.cs",
+              "RelativeDocumentMoniker": "Entity\\Contexts\\DataInitial.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Contexts\\DataInitial.cs",
+              "RelativeToolTip": "Entity\\Contexts\\DataInitial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:46:20.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IBaseModelData.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Data\\Interfaces\\IBaseModelData.cs",
+              "RelativeDocumentMoniker": "Data\\Interfaces\\IBaseModelData.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Data\\Interfaces\\IBaseModelData.cs",
+              "RelativeToolTip": "Data\\Interfaces\\IBaseModelData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:18:16.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BaseModel.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\BaseModel.cs",
+              "RelativeDocumentMoniker": "Entity\\Models\\BaseModel.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\BaseModel.cs",
+              "RelativeToolTip": "Entity\\Models\\BaseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T12:47:52.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Card.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\Card.cs",
+              "RelativeDocumentMoniker": "Entity\\Models\\Card.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\Card.cs",
+              "RelativeToolTip": "Entity\\Models\\Card.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T14:38:58.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GamePlayerDto.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\GamePlayerDto.cs",
+              "RelativeDocumentMoniker": "Entity\\Dtos\\GamePlayerDto.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\GamePlayerDto.cs",
+              "RelativeToolTip": "Entity\\Dtos\\GamePlayerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:13:35.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RoomDto.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\RoomDto.cs",
+              "RelativeDocumentMoniker": "Entity\\Dtos\\RoomDto.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\RoomDto.cs",
+              "RelativeToolTip": "Entity\\Dtos\\RoomDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:12:56.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PlayerDto.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\PlayerDto.cs",
+              "RelativeDocumentMoniker": "Entity\\Dtos\\PlayerDto.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\PlayerDto.cs",
+              "RelativeToolTip": "Entity\\Dtos\\PlayerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:10:07.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DeckDto.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\DeckDto.cs",
+              "RelativeDocumentMoniker": "Entity\\Dtos\\DeckDto.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\DeckDto.cs",
+              "RelativeToolTip": "Entity\\Dtos\\DeckDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:05:02.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CardDto.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\CardDto.cs",
+              "RelativeDocumentMoniker": "Entity\\Dtos\\CardDto.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\CardDto.cs",
+              "RelativeToolTip": "Entity\\Dtos\\CardDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:03:53.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "Entity\\Models\\Room.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\Room.cs",
+              "RelativeToolTip": "Entity\\Models\\Room.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T14:27:15.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BaseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\BaseDto.cs",
+              "RelativeDocumentMoniker": "Entity\\Dtos\\BaseDto.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Dtos\\BaseDto.cs",
+              "RelativeToolTip": "Entity\\Dtos\\BaseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T12:58:49.763Z"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "Business",
+              "Title": "Deck.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\Deck.cs",
+              "RelativeDocumentMoniker": "Entity\\Models\\Deck.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\Deck.cs",
+              "RelativeToolTip": "Entity\\Models\\Deck.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T14:28:39.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\Player.cs",
+              "RelativeDocumentMoniker": "Entity\\Models\\Player.cs",
+              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Entity\\Models\\Player.cs",
+              "RelativeToolTip": "Entity\\Models\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T12:55:29.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Business.csproj",
               "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Business\\Business.csproj",
               "RelativeDocumentMoniker": "Business\\Business.csproj",
               "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Business\\Business.csproj",
               "RelativeToolTip": "Business\\Business.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-01T12:52:55.761Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\Sena\\source\\repos\\Web\\Utilities\\Class1.cs",
-              "RelativeDocumentMoniker": "Utilities\\Class1.cs",
-              "ToolTip": "C:\\Users\\Sena\\source\\repos\\Web\\Utilities\\Class1.cs",
-              "RelativeToolTip": "Utilities\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T12:46:17.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2025-08-01T12:52:55.761Z"
             }
           ]
         }
