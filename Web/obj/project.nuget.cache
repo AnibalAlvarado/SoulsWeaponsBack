@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+yq9BSESgHI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sena\\source\\repos\\Web\\Web\\Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sena\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.7\\microsoft.aspnetcore.openapi.9.0.7.nupkg.sha512",
+    "C:\\Users\\Sena\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
