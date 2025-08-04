@@ -74,31 +74,75 @@ namespace Business.Implementations
 
         public async Task<CardComparisonDto> CardComparison(CardComparisonDto comparison)
         {
-            var attributeSelector = new Dictionary<string, Func<CardDto, decimal>>
+            try
             {
-                { "Damage", c => c.Damage },
-                { "FireDamage", c => c.FireDamage },
-                { "ElectricDamage", c => c.ElectricDamage },
-                { "CrtiticalDamage", c => c.CrtiticalDamage },
-                { "PoisionDamage", c => c.PoisionDamage },
-                { "MagicDamage", c => c.MagicDamage }
-            };
+                Room room = await _data.GetById((int)comparison.RoomId);
+                var attributeSelector = new Dictionary<string, Func<CardDto, decimal>>
+                {
+                    { "Damage", c => c.Damage },
+                    { "FireDamage", c => c.FireDamage },
+                    { "ElectricDamage", c => c.ElectricDamage },
+                    { "CrtiticalDamage", c => c.CrtiticalDamage },
+                    { "PoisionDamage", c => c.PoisionDamage },
+                    { "MagicDamage", c => c.MagicDamage }
+                };
 
-            if(attributeSelector.TryGetValue(comparison.AttributeComparison, out var selector))
-            {
-                var winner = comparison.PlayersSelectedCards
-                    .Where(p => p.Card != null)
-                    .OrderByDescending(p => selector(p.Card))
-                    .FirstOrDefault();
-                comparison.WinnerRoundId = winner?.GamePlayerId;
-                comparison.WinnerCardId = winner?.Card?.Id;
-            }
-            else
-            {
-                throw new InvalidOperationException("El atributo de comparación no es válido.");
-            }
+                if (attributeSelector.TryGetValue(comparison.AttributeComparison, out var selector))
+                {
+                    var winner = comparison.PlayersSelectedCards
+                        .Where(p => p.Card != null)
+                        .OrderByDescending(p => selector(p.Card))
+                        .FirstOrDefault();
+                    comparison.WinnerRoundId = winner?.GamePlayerId;
+                    comparison.WinnerCardId = winner?.Card?.Id;
 
-            return comparison;
+                }
+                else
+                {
+                    throw new InvalidOperationException("El atributo de comparación no es válido.");
+                }
+
+                var lossers = comparison.PlayersSelectedCards
+                    .Where(p => p.Card != null && p.GamePlayerId != comparison.WinnerRoundId);
+
+                foreach (var player in lossers)
+                {
+                    DeckDto newDeck = new()
+                    {
+                        GamePlayerId = (int)comparison.WinnerRoundId,
+                        CardId = (int)player.Card.Id
+                    };
+                    DeckDto createdDeck = await _deckBusiness.Save(newDeck);
+                    if (createdDeck == null)
+                    {
+                        throw new InvalidOperationException("No se pudo crear el deck.");
+                    }
+
+                    int eliminatedCard = await _deckBusiness.InactiveCardOfDeck((int)player.Card.Id, (int)player.GamePlayerId);
+                    if (eliminatedCard == 0)
+                    {
+                        throw new InvalidOperationException("No se pudo inactivar la carta.");
+                    }
+                }
+                if(room.CurrentRound == 7)
+                {
+                    GameWinnerSelection();
+                }
+                return comparison;
+            }
+            catch (InvalidOperationException IOex)
+            {
+                throw new InvalidOperationException("Error al comparar las cartas.", IOex);
+            }
+            catch (Exception ex )
+            {
+                throw new Exception("Error al comparar las cartas.", ex);
+            }
+        }
+
+        private static int GameWinnerSelection()
+        {
+            return 0;
         }
 
 

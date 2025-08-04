@@ -144,7 +144,6 @@ namespace Data.Implementations
             {
                 _context.Remove(entity);
                 await _context.SaveChangesAsync();
-                //await AuditAsync("Delete", id);
                 return true;
             }
             catch (DbUpdateException ex)
@@ -165,13 +164,11 @@ namespace Data.Implementations
                 if (entity == null)
                     throw new DataException($"No se encontró un registro con el ID {id}.");
 
-                // Marcar como inactivo (soft delete)
+
                 entity.IsDeleted = true;
 
                 _context.Entry(entity).State = EntityState.Modified;
                 int result = await _context.SaveChangesAsync();
-
-                //await AuditAsync("Logical Delete", id);
 
                 return result;
             }

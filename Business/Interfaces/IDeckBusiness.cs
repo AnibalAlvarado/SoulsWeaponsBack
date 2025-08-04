@@ -12,5 +12,6 @@ namespace Business.Interfaces
     public interface IDeckBusiness : IBaseModelBusiness<Deck, DeckDto>
     {
         Task<List<PlayersDeckDto>> AssignCardsToPlayers(List<PlayersDeckDto> playersDeckDto);
+        Task<int> InactiveCardOfDeck(int cardId, int playerId);
     }
 }

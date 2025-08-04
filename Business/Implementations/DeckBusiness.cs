@@ -69,6 +69,11 @@ namespace Business.Implementations
             {
                 throw new Exception("Error al asignar las cartas.", ex);
             }
-        }   
+        }
+
+        public async Task<int> InactiveCardOfDeck(int cardId, int playerId)
+        {
+            return await _data.InactiveCardOfDeck(cardId, playerId);
+        }
     }
 }
