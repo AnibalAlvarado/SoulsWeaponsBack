@@ -8,5 +8,6 @@ namespace Entity.Dtos
 {
     public class RoomDto : BaseDto
     {
+        public int? CurrentRound { get; set; }
     }
 }

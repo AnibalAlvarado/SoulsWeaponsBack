@@ -17,6 +17,12 @@ namespace Entity.Contexts
             _configuration = configuration;
         }
 
+        //Defino que todos los decimales usados tengan la precición (18, 2)
+        protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
+        {
+            configurationBuilder.Properties<decimal>().HavePrecision(18, 2);
+        }
+
         public DbSet<Player> Players { get; set; }
         public DbSet<Card> Cards { get; set; }
         public DbSet<GamePlayer> GamePlayers { get; set; }

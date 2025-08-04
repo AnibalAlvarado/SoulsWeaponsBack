@@ -8,5 +8,6 @@ namespace Entity.Models
 {
     public class Room : BaseModel
     {
+        public int? CurrentRound { get; set; }
     }
 }

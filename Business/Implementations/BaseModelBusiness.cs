@@ -28,18 +28,18 @@ namespace Business.Implementations
         public override async Task<bool> PermanentDelete(int id)
         {
             if (id <= 0)
-                throw new ValidationException(nameof(id), "El ID debe ser mayor que cero.");
+                throw new ValidationException(nameof(id) + "El ID debe ser mayor que cero.");
 
             var success = await _data.PermanentDelete(id);
             if (!success)
-                throw new EntityNotFoundException(typeof(T).Name, id);
+                throw new InvalidOperationException(typeof(T).Name + " no pudo ser eliminado permanentemente.");
 
             return true;
         }
         public override async Task<int> Delete(int id)
         {
             if (id <= 0)
-                throw new ValidationException(nameof(id), "El ID debe ser mayor que cero.");
+                throw new ValidationException(nameof(id) + "El ID debe ser mayor que cero.");
             return await _data.Delete(id);
         }
 
@@ -61,10 +61,10 @@ namespace Business.Implementations
         public override async Task<D> GetById(int id)
         {
             if (id <= 0)
-                throw new ValidationException(nameof(id), "El ID debe ser mayor que cero.");
+                throw new ValidationException(nameof(id) + "El ID debe ser mayor que cero.");
             T entity = await _data.GetById(id);
             if (entity == null)
-                throw new EntityNotFoundException(typeof(T).Name, id);
+                throw new InvalidOperationException(typeof(T).Name + " no pudo ser encontrado.");
             D dto = _mapper.Map<D>(entity);
             return dto;
         }
@@ -75,13 +75,14 @@ namespace Business.Implementations
             try
             {
                 dto.Asset = true;
+                dto.CreatedAt = DateTime.Now;
                 BaseModel entity = _mapper.Map<T>(dto);
                 entity = await _data.Save((T)entity);
                 return _mapper.Map<D>(entity);
             }
             catch (Exception ex)
             {
-                throw new BusinessException("Error al crear la entidad.", ex);
+                throw new Exception("Error al crear la entidad.", ex);
             }
         }
 
@@ -94,7 +95,7 @@ namespace Business.Implementations
             }
             catch (Exception ex)
             {
-                throw new BusinessException("Error al actualizar la entidad.", ex);
+                throw new Exception("Error al actualizar la entidad.", ex);
             }
         }
 
