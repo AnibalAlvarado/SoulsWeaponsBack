@@ -125,11 +125,13 @@ namespace Business.Implementations
                         throw new InvalidOperationException("No se pudo inactivar la carta.");
                     }
                 }
-                if(room.CurrentRound == 7)
+                if(room.CurrentRound >= 7)
                 {
                    int gameWinner = await GameWinnerSelection();
                    comparison.AbsoluteWinnerId = gameWinner;
                 }
+                room.CurrentRound++;
+                await _data.Update(room);
                 return comparison;
             }
             catch (InvalidOperationException IOex)

@@ -14,5 +14,6 @@ namespace Business.Interfaces
         Task<List<PlayersDeckDto>> AssignCardsToPlayers(List<PlayersDeckDto> playersDeckDto);
         Task<int> InactiveCardOfDeck(int cardId, int playerId);
         Task<int> GameWinnerSelection();
+        Task<List<PlayersDeckDto>> GetAllPlayersDecksByGamePlayerIds(List<int> playeryersIds);
     }
 }

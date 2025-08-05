@@ -92,5 +92,23 @@ namespace Business.Implementations
                 throw;
             }
         }
+
+        public async Task<List<PlayersDeckDto>> GetAllPlayersDecksByGamePlayerIds(List<int> playerIds)
+        {
+            try
+            {
+                List<PlayersDeckDto> playersWithCards = await _data.GetAllPlayersDecksByGamePlayerIds(playerIds);
+                if(playersWithCards == null)
+                {
+                    throw new InvalidOperationException("No se encontraron jugadores con cartas.");
+                }
+                return playersWithCards;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Business Error: " + ex.Message);
+                throw;
+            }
+        }
     }
 }

@@ -39,5 +39,22 @@ namespace Web.Controllers.Implementations
             }
         }
 
+        [HttpPost("CardComparison")]
+        public async Task<ActionResult<CardComparisonDto>> CardComparison(CardComparisonDto cards)
+        {
+            try
+            {
+                CardComparisonDto playersWithDecks = await _business.CardComparison(cards);
+                var response = new ApiResponse<CardComparisonDto>(playersWithDecks, true, "Registro almacenado exitosamente", null!);
+
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                var response = new ApiResponse<CardComparisonDto>(null!, false, ex.Message, null!);
+                return StatusCode(StatusCodes.Status500InternalServerError, response);
+            }
+        }
+
     }
 }

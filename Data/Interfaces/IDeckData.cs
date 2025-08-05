@@ -1,4 +1,5 @@
 ﻿using Entity.Models;
+using Entity.SpecificsDtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,5 +12,6 @@ namespace Data.Interfaces
     {
         Task<int> InactiveCardOfDeck(int cardId, int playerId);
         Task<int> GameWinnerSelection();
+        Task<List<PlayersDeckDto>> GetAllPlayersDecksByGamePlayerIds(List<int> playeryersIds);
     }
 }

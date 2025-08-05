@@ -10,6 +10,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Entity.SpecificsDtos;
+using Entity.Dtos;
 
 namespace Data.Implementations
 {
@@ -75,5 +77,47 @@ namespace Data.Implementations
                 throw;
             }
         }
+
+        public async Task<List<PlayersDeckDto>> GetAllPlayersDecksByGamePlayerIds(List<int> playerIds)
+        {
+            try
+            {
+                var result = await _context.Decks
+                    .Where(d => d.Asset && d.IsEarned == false && playerIds.Contains(d.GamePlayerId))
+                    .Include(d => d.Card)
+                    .GroupBy(d => d.GamePlayerId)
+                    .Select(group => new PlayersDeckDto
+                    {
+                        GamePlayerId = group.Key,
+                        Cards = group.Select(d => new CardDto
+                        {
+                            Id = d.Card.Id,
+                            Name = d.Card.Name,
+                            Damage = d.Card.Damage,
+                            FireDamage = d.Card.FireDamage,
+                            ElectricDamage = d.Card.ElectricDamage,
+                            CrtiticalDamage = d.Card.CrtiticalDamage,
+                            PoisionDamage = d.Card.PoisionDamage,
+                            MagicDamage = d.Card.MagicDamage,
+                            Image = d.Card.Image
+                        }).ToList()
+                    })
+                    .ToListAsync();
+
+                return result;
+            }
+            catch (DbException ex)
+            {
+                Console.WriteLine("Database error: " + ex.Message);
+                throw;
+            }
+            catch (DbUpdateException ex)
+            {
+                Console.WriteLine("Database update (EF) failed: " + ex.InnerException?.Message);
+                throw;
+            }
+        }
+
+
     }
 }

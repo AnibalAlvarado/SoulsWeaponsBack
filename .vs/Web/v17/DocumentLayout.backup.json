@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Anibal\\Desktop\\SoulsWeaponsBack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0C512EAE-8E58-47AC-8966-C7162353384B}|Data\\Data.csproj|c:\\users\\anibal\\desktop\\soulsweaponsback\\data\\interfaces\\ideckdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C512EAE-8E58-47AC-8966-C7162353384B}|Data\\Data.csproj|solutionrelative:data\\interfaces\\ideckdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A5C3E91-3BDE-47FA-8F52-3F29F5A545B6}|Entity\\Entity.csproj|c:\\users\\anibal\\desktop\\soulsweaponsback\\entity\\specificsdtos\\cardcomparisondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5C3E91-3BDE-47FA-8F52-3F29F5A545B6}|Entity\\Entity.csproj|solutionrelative:entity\\specificsdtos\\cardcomparisondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5C3E91-3BDE-47FA-8F52-3F29F5A545B6}|Entity\\Entity.csproj|c:\\users\\anibal\\desktop\\soulsweaponsback\\entity\\dtos\\deckdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5C3E91-3BDE-47FA-8F52-3F29F5A545B6}|Entity\\Entity.csproj|solutionrelative:entity\\dtos\\deckdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A275338F-305A-4DE9-A1E3-530EA3D40946}|Business\\Business.csproj|c:\\users\\anibal\\desktop\\soulsweaponsback\\business\\interfaces\\ideckbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A275338F-305A-4DE9-A1E3-530EA3D40946}|Business\\Business.csproj|solutionrelative:business\\interfaces\\ideckbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A275338F-305A-4DE9-A1E3-530EA3D40946}|Business\\Business.csproj|c:\\users\\anibal\\desktop\\soulsweaponsback\\business\\implementations\\roombusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A275338F-305A-4DE9-A1E3-530EA3D40946}|Business\\Business.csproj|solutionrelative:business\\implementations\\roombusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A275338F-305A-4DE9-A1E3-530EA3D40946}|Business\\Business.csproj|c:\\users\\anibal\\desktop\\soulsweaponsback\\business\\implementations\\deckbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A275338F-305A-4DE9-A1E3-530EA3D40946}|Business\\Business.csproj|solutionrelative:business\\implementations\\deckbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C512EAE-8E58-47AC-8966-C7162353384B}|Data\\Data.csproj|c:\\users\\anibal\\desktop\\soulsweaponsback\\data\\implementations\\deckdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C512EAE-8E58-47AC-8966-C7162353384B}|Data\\Data.csproj|solutionrelative:data\\implementations\\deckdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C512EAE-8E58-47AC-8966-C7162353384B}|Data\\Data.csproj|c:\\users\\anibal\\desktop\\soulsweaponsback\\data\\interfaces\\ideckdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C512EAE-8E58-47AC-8966-C7162353384B}|Data\\Data.csproj|solutionrelative:data\\interfaces\\ideckdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,34 +38,99 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CardComparisonDto.cs",
+              "DocumentMoniker": "C:\\Users\\Anibal\\Desktop\\SoulsWeaponsBack\\Entity\\SpecificsDtos\\CardComparisonDto.cs",
+              "RelativeDocumentMoniker": "Entity\\SpecificsDtos\\CardComparisonDto.cs",
+              "ToolTip": "C:\\Users\\Anibal\\Desktop\\SoulsWeaponsBack\\Entity\\SpecificsDtos\\CardComparisonDto.cs",
+              "RelativeToolTip": "Entity\\SpecificsDtos\\CardComparisonDto.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwAoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:25:20.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DeckDto.cs",
+              "DocumentMoniker": "C:\\Users\\Anibal\\Desktop\\SoulsWeaponsBack\\Entity\\Dtos\\DeckDto.cs",
+              "RelativeDocumentMoniker": "Entity\\Dtos\\DeckDto.cs",
+              "ToolTip": "C:\\Users\\Anibal\\Desktop\\SoulsWeaponsBack\\Entity\\Dtos\\DeckDto.cs",
+              "RelativeToolTip": "Entity\\Dtos\\DeckDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:01:41.582Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "IDeckBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Anibal\\Desktop\\SoulsWeaponsBack\\Business\\Interfaces\\IDeckBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Interfaces\\IDeckBusiness.cs",
+              "ToolTip": "C:\\Users\\Anibal\\Desktop\\SoulsWeaponsBack\\Business\\Interfaces\\IDeckBusiness.cs",
+              "RelativeToolTip": "Business\\Interfaces\\IDeckBusiness.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAUwA0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T05:42:03.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoomBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Anibal\\Desktop\\SoulsWeaponsBack\\Business\\Implementations\\RoomBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Implementations\\RoomBusiness.cs",
+              "ToolTip": "C:\\Users\\Anibal\\Desktop\\SoulsWeaponsBack\\Business\\Implementations\\RoomBusiness.cs",
+              "RelativeToolTip": "Business\\Implementations\\RoomBusiness.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAgwD0AAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T04:56:05.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DeckBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Anibal\\Desktop\\SoulsWeaponsBack\\Business\\Implementations\\DeckBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Implementations\\DeckBusiness.cs",
+              "ToolTip": "C:\\Users\\Anibal\\Desktop\\SoulsWeaponsBack\\Business\\Implementations\\DeckBusiness.cs",
+              "RelativeToolTip": "Business\\Implementations\\DeckBusiness.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAASwDYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T04:46:20.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "IDeckData.cs",
               "DocumentMoniker": "C:\\Users\\Anibal\\Desktop\\SoulsWeaponsBack\\Data\\Interfaces\\IDeckData.cs",
               "RelativeDocumentMoniker": "Data\\Interfaces\\IDeckData.cs",
               "ToolTip": "C:\\Users\\Anibal\\Desktop\\SoulsWeaponsBack\\Data\\Interfaces\\IDeckData.cs",
               "RelativeToolTip": "Data\\Interfaces\\IDeckData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-05T04:41:43.682Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "DeckData.cs",
               "DocumentMoniker": "C:\\Users\\Anibal\\Desktop\\SoulsWeaponsBack\\Data\\Implementations\\DeckData.cs",
               "RelativeDocumentMoniker": "Data\\Implementations\\DeckData.cs",
               "ToolTip": "C:\\Users\\Anibal\\Desktop\\SoulsWeaponsBack\\Data\\Implementations\\DeckData.cs",
               "RelativeToolTip": "Data\\Implementations\\DeckData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAmwA8AAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAcwEAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-04T11:03:41.011Z",
               "EditorCaption": ""
