@@ -10,6 +10,7 @@ namespace Entity.Models
     {
         public int GamePlayerId { get; set; }
         public int CardId { get; set; }
+        public bool? IsEarned { get; set; }
         
         public GamePlayer? GamePlayer { get; set; }
         public Card? Card { get; set; }

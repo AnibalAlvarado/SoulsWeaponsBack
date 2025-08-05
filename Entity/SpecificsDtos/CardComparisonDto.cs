@@ -8,7 +8,7 @@ namespace Entity.SpecificsDtos
 {
     public class CardComparisonDto
     {
-        public int AbsoluteWinnerId { get; set; }
+        public int? AbsoluteWinnerId { get; set; }
         public int? RoomId { get; set; }
         public string AttributeComparison { get; set; }
         public int? WinnerRoundId { get; set; }

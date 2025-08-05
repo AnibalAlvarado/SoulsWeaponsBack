@@ -4,8 +4,10 @@ using Data.Interfaces;
 using Entity.Dtos;
 using Entity.Models;
 using Entity.SpecificsDtos;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,7 +33,7 @@ namespace Business.Implementations
                 {
                     throw new InvalidOperationException("No se encontraron cartas para asignar.");
                 }
-                if (allCards.Count < playersDeckDto.Count * 7)
+                if (allCards.Count < playersDeckDto.Count * 8)
                 {
                     throw new InvalidOperationException("No hay suficientes cartas para asignar.");
                 }
@@ -41,15 +43,16 @@ namespace Business.Implementations
                 foreach (PlayersDeckDto playerDeck in playersDeckDto)
                 {
                     List<CardDto> cardsToAssign = shuffledCards
-                        .Take(7)
+                        .Take(8)
                         .ToList();
-                    shuffledCards.RemoveRange(0, 7);
+                    shuffledCards.RemoveRange(0, 8);
                     foreach (CardDto card in cardsToAssign)
                     {
                         DeckDto newDeck = new()
                         {
                             GamePlayerId = playerDeck.GamePlayerId,
-                            CardId = (int)card.Id
+                            CardId = (int)card.Id,
+                            IsEarned = false
                         };
                         DeckDto createdDeck = await Save(newDeck);
                         if (createdDeck == null)
@@ -74,6 +77,20 @@ namespace Business.Implementations
         public async Task<int> InactiveCardOfDeck(int cardId, int playerId)
         {
             return await _data.InactiveCardOfDeck(cardId, playerId);
+        }
+
+        public async Task<int> GameWinnerSelection()
+        {
+            try
+            {
+                int GameWinnerId = await _data.GameWinnerSelection();
+                return GameWinnerId;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Business Error: " + ex.Message);
+                throw;
+            }
         }
     }
 }

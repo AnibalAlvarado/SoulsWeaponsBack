@@ -22,7 +22,7 @@ namespace Web.Controllers.Implementations
         /// </summary>
         /// <param name="dto">List of players in the room</param>
         /// <returns></returns>
-        [HttpPost]
+        [HttpPost("CreateRoom")]
         public async Task<ActionResult<List<PlayersDeckDto>>> CreateRoom(List<PlayerDto> players)
         {
             try

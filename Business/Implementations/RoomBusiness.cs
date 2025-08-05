@@ -110,7 +110,8 @@ namespace Business.Implementations
                     DeckDto newDeck = new()
                     {
                         GamePlayerId = (int)comparison.WinnerRoundId,
-                        CardId = (int)player.Card.Id
+                        CardId = (int)player.Card.Id,
+                        IsEarned = true
                     };
                     DeckDto createdDeck = await _deckBusiness.Save(newDeck);
                     if (createdDeck == null)
@@ -126,12 +127,13 @@ namespace Business.Implementations
                 }
                 if(room.CurrentRound == 7)
                 {
-                    GameWinnerSelection();
+                   int gameWinner = await GameWinnerSelection();
+                   comparison.AbsoluteWinnerId = gameWinner;
                 }
                 return comparison;
             }
             catch (InvalidOperationException IOex)
-            {
+            {   
                 throw new InvalidOperationException("Error al comparar las cartas.", IOex);
             }
             catch (Exception ex )
@@ -140,9 +142,28 @@ namespace Business.Implementations
             }
         }
 
-        private static int GameWinnerSelection()
+        private async Task<int> GameWinnerSelection()
         {
-            return 0;
+            try
+            {
+                int gameWinnerId = await _deckBusiness.GameWinnerSelection();
+                if(gameWinnerId == 0)
+                {
+                    throw new InvalidOperationException("No se pudo seleccionar el ganador.");
+                }
+                GamePlayerDto gameplayerWinner = await _gamePlayerBusiness.GetById(gameWinnerId);
+                if(gameplayerWinner == null)
+                {
+                    throw new InvalidOperationException("El jugador ganador no fue encontrado.");
+                }
+                gameplayerWinner.Winner = true;
+                await _gamePlayerBusiness.Update(gameplayerWinner);
+                return gameWinnerId;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al seleccionar el ganador.", ex);
+            }
         }
 
 

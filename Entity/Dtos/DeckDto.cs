@@ -11,6 +11,7 @@ namespace Entity.Dtos
     {
         public int GamePlayerId { get; set; }
         public int CardId { get; set; }
+        public bool? IsEarned { get; set; } = false;
 
         public string? GamePlayer { get; set; }
         public string? Card { get; set; }

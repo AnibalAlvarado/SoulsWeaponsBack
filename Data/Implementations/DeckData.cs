@@ -46,5 +46,34 @@ namespace Data.Implementations
                 throw;
             }
         }
+
+        public async Task<int> GameWinnerSelection()
+        {
+            try
+            {
+                var winner = await _context.Set<Deck>()
+                    .Where(d => d.Asset) // Solo cartas activas
+                    .GroupBy(d => d.GamePlayerId)
+                    .Select(group => new
+                    {
+                        GamePlayerId = group.Key,
+                        CardCount = group.Count()
+                    })
+                    .OrderByDescending(g => g.CardCount)
+                    .FirstOrDefaultAsync();
+
+                return winner?.GamePlayerId ?? 0; // Si no hay registros, retorna 0
+            }
+            catch (DbException ex)
+            {
+                Console.WriteLine("Database error: " + ex.Message);
+                throw;
+            }
+            catch (DbUpdateException ex)
+            {
+                Console.WriteLine("Database update (EF) failed: " + ex.InnerException?.Message);
+                throw;
+            }
+        }
     }
 }

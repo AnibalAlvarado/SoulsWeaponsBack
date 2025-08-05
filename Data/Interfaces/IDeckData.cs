@@ -10,5 +10,6 @@ namespace Data.Interfaces
     public interface IDeckData : IBaseModelData<Deck>
     {
         Task<int> InactiveCardOfDeck(int cardId, int playerId);
+        Task<int> GameWinnerSelection();
     }
 }

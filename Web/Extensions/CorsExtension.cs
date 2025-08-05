@@ -1,22 +1,22 @@
-﻿namespace Web.Extensions
-{
-    public static class CorsExtension
+﻿    namespace Web.Extensions
     {
-        public static IServiceCollection AddCustomCors(this IServiceCollection services, IConfiguration configuration)
+        public static class CorsExtension
         {
-            var origenesPermitidos = configuration.GetValue<string>("OrigenesPermitidos")!.Split(",");
-
-            services.AddCors(options =>
+            public static IServiceCollection AddCustomCors(this IServiceCollection services, IConfiguration configuration)
             {
-                options.AddDefaultPolicy(policy =>
-                {
-                    policy.WithOrigins(origenesPermitidos)
-                          .AllowAnyHeader()
-                          .AllowAnyMethod();
-                });
-            });
+                var origenesPermitidos = configuration.GetValue<string>("OrigenesPermitidos")!.Split(",");
 
-            return services;
+                services.AddCors(options =>
+                {
+                    options.AddDefaultPolicy(policy =>
+                    {
+                        policy.WithOrigins(origenesPermitidos)
+                              .AllowAnyHeader()
+                              .AllowAnyMethod();
+                    });
+                });
+
+                return services;
+            }
         }
     }
-}

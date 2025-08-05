@@ -1,6 +1,7 @@
 using Entity.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Utilities.Implementations;
 using Web.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(conectionString));
 
 builder.Services.AddControllers();
+builder.Services.AddSwaggerGen();
+
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 // CORS
@@ -21,7 +24,8 @@ builder.Services.AddCustomCors(builder.Configuration);
 builder.Services.AddAppServices();
 
 // AutoMapper
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
+
 
 var app = builder.Build();
 
@@ -38,10 +42,17 @@ app.UseSwaggerUI(options =>
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "SoulsWeapons API v1");
+        options.DocumentTitle = "SoulsWeapons API Docs";
+        options.DefaultModelsExpandDepth(-1); // Ocultar esquema de modelos por defecto
+    });
+
     app.UseDeveloperExceptionPage();
     app.MapOpenApi();
 }
+
 
 
 app.UseHttpsRedirection();
